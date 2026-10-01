@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>StayLux Hotel</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app">
+  <header class="topbar"><div><small>Welcome back</small><h1>StayLux</h1></div><button class="icon" onclick="show('notifications')">🔔</button></header>
+  <section class="hero"><div><span>PREMIUM STAYS</span><h2>Find your perfect stay</h2><p>Comfort, luxury and unforgettable experiences.</p></div></section>
+  <div class="search" onclick="show('search')"><span>🔍</span><span>Where do you want to stay?</span><b>›</b></div>
+  <div class="quick"><button onclick="show('rooms')">🛏️<small>Rooms</small></button><button onclick="show('food')">🍽️<small>Food</small></button><button onclick="show('spa')">🧖<small>Spa</small></button><button onclick="show('pool')">🏊<small>Pool</small></button></div>
+  <section class="section"><div class="title"><h3>Featured rooms</h3><a onclick="show('rooms')">See all</a></div><div class="cards">
+    <article class="card"><div class="roompic deluxe">DELUXE</div><div class="cardbody"><div><h4>Deluxe King Room</h4><p>★★★★★ · City view</p></div><strong>₹4,999<span>/night</span></strong><button onclick="book('Deluxe King Room',4999)">Book now</button></div></article>
+    <article class="card"><div class="roompic suite">SUITE</div><div class="cardbody"><div><h4>Royal Suite</h4><p>★★★★★ · Breakfast included</p></div><strong>₹8,499<span>/night</span></strong><button onclick="book('Royal Suite',8499)">Book now</button></div></article>
+  </div></section>
+  <section class="section"><div class="title"><h3>Special offers</h3><a>View all</a></div><div class="offer"><b>20% OFF</b><div><h4>Weekend Escape</h4><p>Use code <strong>STAY20</strong></p></div><button onclick="toast('Coupon STAY20 copied!')">Copy</button></div></section>
+  <nav class="nav"><button class="active">⌂<small>Home</small></button><button onclick="show('rooms')">🛏<small>Rooms</small></button><button onclick="show('bookings')">📋<small>Bookings</small></button><button onclick="show('profile')">👤<small>Profile</small></button></nav>
+</div>
+<div id="modal" class="modal hidden"><div class="sheet"><button class="close" onclick="closeModal()">×</button><div id="modalContent"></div></div></div>
+<script src="js/app.js"></script>
+</body></html>
